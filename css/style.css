@@ -41,8 +41,14 @@ body {
   width: min(100%, 327px);
 }
 
-.hero img {
+/* .hero {
+  width: 100%;
+  height: 200px;
   display: block;
+} */
+
+.hero img {
+  display: inline-block;
   width: 100%;
   height: 100%;
   /* border: 1px solid red; */
@@ -81,6 +87,7 @@ section h2 {
 section .details {
   font-size: 14px;
   color: #333;
+  line-height: 1.2rem;
 }
 
 .author {
@@ -95,4 +102,10 @@ section .details {
 .author figcaption {
   font-size: 14px;
   font-weight: 900;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    width: min(100%, 384px);
+  }
 }
