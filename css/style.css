@@ -12,6 +12,11 @@ img {
   height: auto;
 }
 
+/* Utility Styles */
+.nowrap {
+  white-space: nowrap;
+}
+
 /* General Styles */
 body {
   font-family: "Figtree", sans-serif;
@@ -37,8 +42,10 @@ body {
 }
 
 .hero img {
-  height: 200px;
-  border: 1px solid red;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
   border-radius: 10px;
 }
 
@@ -68,5 +75,24 @@ section .date {
 
 section h2 {
   font-size: 20px;
+  font-weight: 900;
+}
+
+section .details {
+  font-size: 14px;
+  color: #333;
+}
+
+.author {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+}
+
+.author figcaption {
+  font-size: 14px;
   font-weight: 900;
 }
